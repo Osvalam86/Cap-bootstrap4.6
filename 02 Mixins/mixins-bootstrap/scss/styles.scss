@@ -1,0 +1,102 @@
+// Bootstrap Core
+@import "../bootstrap/functions";
+@import "../bootstrap/variables";
+
+// Mis variables
+@import "variables";
+
+// Bootstrap Mixins
+@import "../bootstrap/mixins";
+
+// Bootstrap root
+@import "../bootstrap/root";
+
+// Bootstrap reboot
+@import "../bootstrap/reboot";
+
+// Bootstrap type
+@import "../bootstrap/type";
+
+// Grid system
+// **** MIXINS
+@import "../bootstrap/mixins/deprecate";
+@import "../bootstrap/mixins/breakpoints";
+@import "../bootstrap/mixins/grid-framework";
+@import "../bootstrap/mixins/grid";
+
+// **** Grid
+@import "../bootstrap/grid";
+
+// **** Utilities
+@import "../bootstrap/utilities/display";
+@import "../bootstrap/utilities/flex";
+@import "../bootstrap/utilities/spacing";
+
+// **** Bootstrap utilities
+@import "../bootstrap/utilities";
+
+
+// **** Componentes Bootstrap
+@import "../bootstrap/badge";
+@import "../bootstrap/buttons";
+
+// ************************* Estilos
+.custom-class {
+  display: none;
+}
+
+// @include media-breakpoint-up(sm) {
+//   .custom-class {
+//     display: block;
+//   }
+// }
+
+
+@include media-breakpoint-down(md) {
+  .custom-class {
+    display: block;
+  }
+}
+
+// * Modificando badge
+.badge {
+  &.badge-primary {
+    @include badge-variant($green-200);
+    color: $green-600;
+  }
+
+  &.badge-warning {
+    @include badge-variant($yellow-300);
+    color: $yellow-600;
+  }
+
+  &.badge-danger {
+    @include badge-variant($red-300);
+    color: $red-600;
+  }
+}
+
+
+// * Modificando boton
+.btn-xs {
+  @include button-size(5px, 8px, 12px, 16px, 4px)
+}
+
+.btn-primary {
+  @include button-variant($primary,
+    $primary,
+    darken($primary, 7.5%),
+    darken($primary, 10%),
+    darken($primary, 10%),
+    darken($primary, 12.5%));
+  color: $white;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $white;
+    text-decoration: none;
+    box-shadow: none;
+  }
+}
