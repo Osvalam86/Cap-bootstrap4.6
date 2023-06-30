@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <title>Flexbox</title>
+
+    <style>
+      .hero-image {
+        /* background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9db3186a-9d13-438b-9f7a-7af36d5e6707/dbl4uog-d529ce12-4f24-43a1-a236-cf9a08c238ff.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzlkYjMxODZhLTlkMTMtNDM4Yi05ZjdhLTdhZjM2ZDVlNjcwN1wvZGJsNHVvZy1kNTI5Y2UxMi00ZjI0LTQzYTEtYTIzNi1jZjlhMDhjMjM4ZmYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tJj50gERWmPLIutvmiMvIyt3A65DLcz7BOBmICmAbUg"); */
+        background-image: radial-gradient(
+            circle farthest-corner at 92.3% 71.5%,
+            rgba(83, 138, 214, 0.35) 0%,
+            rgba(134, 231, 214, 0.65) 90%
+          ),
+          url("./images/image3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .wrapper-image {
+        height: 25rem;
+      }
+
+      .wrapper-image img {
+        object-fit: cover;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body class="d-flex flex-column min-vh-100 bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="flex-grow-1">
+      <section
+        class="bg-info text-white py-2 d-flex flex-column align-items-center flex-md-row justify-content-md-around"
+      >
+        <article>flex item 1</article>
+        <article>flex item 2</article>
+        <article>flex item 3</article>
+        <article>flex item 4</article>
+        <article>flex item 5</article>
+      </section>
+
+      <section class="hero-image min-vh-100 text-white">
+        <div
+          class="min-vh-100 d-flex align-items-center justify-content-center flex-column"
+        >
+          <h1 class="bg-light p-2 text-dark">
+            Flexbox + Bootstrap AWESOME COOL!
+          </h1>
+          <p class="w-50 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+            officiis, quam iste quod, quia mollitia repudiandae impedit neque
+            asperiores suscipit explicabo aliquid? Tempore a ducimus amet
+            expedita, nesciunt quo hic!
+          </p>
+        </div>
+      </section>
+
+      <section class="container py-4 bg-white">
+        <div class="row no-gutters align-items-center">
+          <article class="col-12 col-md-6 p-3 p-md-5">
+            <h3>Título</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+              saepe consequuntur, nesciunt quod voluptatibus aliquam doloremque
+              delectus fugiat? Sint odit, sit quos temporibus nostrum illum
+              tempore voluptatibus quasi praesentium? Reprehenderit?
+            </p>
+          </article>
+          <article class="col-12 col-md-6 wrapper-image">
+            <img
+              class="img-fluid h-100 w-100"
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0ab7d0da-b803-414e-bdc8-4ca3eccfac06/d99fbf4-ca302b41-7f21-4b70-bca2-fd5711423dd8.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBhYjdkMGRhLWI4MDMtNDE0ZS1iZGM4LTRjYTNlY2NmYWMwNlwvZDk5ZmJmNC1jYTMwMmI0MS03ZjIxLTRiNzAtYmNhMi1mZDU3MTE0MjNkZDguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.WZJZ9gs9ADlrk6Zcs7u6qboSkQyRMVJNWg9gkjRJfsY"
+              alt="Bruce Banner / Hulk"
+            />
+          </article>
+        </div>
+        <div class="row no-gutters align-items-center">
+          <article class="col-12 col-md-6 p-3 p-md-5 order-md-1">
+            <h3>Título</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+              saepe consequuntur, nesciunt quod voluptatibus aliquam doloremque
+              delectus fugiat? Sint odit, sit quos temporibus nostrum illum
+              tempore voluptatibus quasi praesentium? Reprehenderit?
+            </p>
+          </article>
+          <article class="col-12 col-md-6 wrapper-image">
+            <img
+              class="img-fluid h-100 w-100"
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88e39bc8-2533-40fc-bccd-5fe75d3e2b24/d919s06-4bf94edc-8cfd-4159-9f8d-e8e5175d94a9.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4ZTM5YmM4LTI1MzMtNDBmYy1iY2NkLTVmZTc1ZDNlMmIyNFwvZDkxOXMwNi00YmY5NGVkYy04Y2ZkLTQxNTktOWY4ZC1lOGU1MTc1ZDk0YTkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lqnzXwsX1DOpbR0QUSq3qYP5bVKhsnFJaDLE1dBUyl8"
+              alt="Thanos y Rocket"
+            />
+          </article>
+        </div>
+        <div class="row no-gutters align-items-center">
+          <article class="col-12 col-md-6 p-3 p-md-5">
+            <h3>Título</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+              saepe consequuntur, nesciunt quod voluptatibus aliquam doloremque
+              delectus fugiat? Sint odit, sit quos temporibus nostrum illum
+              tempore voluptatibus quasi praesentium? Reprehenderit?
+            </p>
+          </article>
+          <article class="col-12 col-md-6 wrapper-image">
+            <img
+              class="img-fluid h-100 w-100"
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/49ec1464-d899-400a-b608-c48c76b500d2/dewqwsl-416ecccb-2d20-45ee-8c39-e67c42fcbfca.jpg/v1/fill/w_1280,h_1977,q_75,strp/spider_man__no_way_home___collaboration__by_patrickbrown_dewqwsl-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTk3NyIsInBhdGgiOiJcL2ZcLzQ5ZWMxNDY0LWQ4OTktNDAwYS1iNjA4LWM0OGM3NmI1MDBkMlwvZGV3cXdzbC00MTZlY2NjYi0yZDIwLTQ1ZWUtOGMzOS1lNjdjNDJmY2JmY2EuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.7W1dA7YMSmIROdZQnNHDAj61mLMQKvQsSJy4UOSfczY"
+              alt="Spiderverse"
+            />
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 text-center">
+      <h4>Sticky footer con Boostrap</h4>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
