@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <title>UI State</title>
+  </head>
+  <body>
+    <form action="#">
+      <label class="label">:enabled</label>
+      <input class="input" type="text" />
+      <label class="label">:disabled</label>
+      <input class="input" type="text" disabled />
+      <input class="input" id="checkbox" type="checkbox" />
+      <label class="label" for="checkbox">:checked</label>
+      <label class="label">:in-range</label>
+      <input class="input" type="number" min="50" max="60" />
+      <label class="label">:out-of-range</label>
+      <input class="input" type="number" min="50" max="100" />
+      <span class="no-valido">Valor no valido</span>
+      <label class="label">:optional</label>
+      <input class="input" type="text" />
+      <label class="label">:required</label>
+      <input class="input" type="text" required />
+      <label class="label">:valid</label>
+      <input class="input" type="number" />
+      <label class="label">:invalid</label>
+      <input class="input" type="number" />
+      <label class="label">:read-only</label>
+      <input class="input" type="text" value="Nombre de usuario" readonly />
+    </form>
+
+    <!-- EJEMPLO DE CHECKBOX -->
+    <div class="wrapper">
+      <input type="checkbox" class="check" id="check" />
+      <label class="label-check" for="check">Checkbox</label>
+    </div>
+  </body>
+</html>
