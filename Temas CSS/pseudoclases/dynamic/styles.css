@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.link {
+  display: block;
+}
+
+.link:link {
+  color: lightblue;
+}
+
+.link:visited {
+  color: red;
+}
+
+.link:active {
+  background: red;
+  color: cyan;
+}
+
+/* Ejemplo para ACTIVE */
+.button {
+  text-decoration: none;
+  display: inline-block;
+  background: red;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.button:hover {
+  color: red;
+  background: white;
+  border: 1px solid;
+}
+
+.button:focus {
+  border: 5px solid green;
+}
+
+/* .menu {
+  background: lightblue;
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.text {
+  margin-top: 400px;
+  margin-bottom: 500px;
+}
+
+.text:target {
+  color: black;
+  background: lightblue;
+} */
+
+.span {
+  display: block;
+}
+
+.span:lang(en) {
+  color: red;
+}
+
+.span:lang(es) {
+  color: blue;
+}

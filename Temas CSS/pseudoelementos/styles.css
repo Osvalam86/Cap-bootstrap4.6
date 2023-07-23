@@ -1,0 +1,44 @@
+.title::first-letter {
+  color: red;
+  font-size: 2em;
+}
+
+.text::first-line {
+  /* color: blue; */
+}
+
+.inline::first-letter {
+  color: red;
+  font-size: 2em;
+}
+
+.inline {
+  display: block;
+  display: inline-block;
+}
+
+.text::selection {
+  color: lime;
+  background-color: red;
+}
+
+.dolar::before {
+  /* content: "$"; */
+}
+
+.dolar::after {
+  /* content: ".00"; */
+}
+
+.dolar {
+  display: flex;
+}
+
+.dolar::before,
+.dolar::after {
+  content: "";
+  background: red;
+  height: 20px;
+  width: 20px;
+  display: block;
+}

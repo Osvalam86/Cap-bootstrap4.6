@@ -1,0 +1,33 @@
+body {
+  background-color: #c2c2c2;
+}
+
+.text {
+  color: purple;
+}
+
+.text a {
+  color: inherit;
+  font-weight: bold;
+}
+
+.text a#test[href] {
+  color: red;
+}
+
+.list {
+  color: indianred;
+}
+
+.list-item-extra {
+  color: initial;
+}
+
+#text {
+  color: green;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

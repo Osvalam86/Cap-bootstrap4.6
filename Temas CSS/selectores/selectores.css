@@ -1,0 +1,89 @@
+* {
+  /* background-color: lightcoral; */
+}
+
+h1 {
+  background-color: lightpink;
+}
+
+p {
+  /* background-color: lightgreen; */
+}
+
+#Title {
+  font-size: 5rem;
+}
+
+.textito {
+  font-size: 1.5rem;
+}
+
+[href] {
+  /* background-color: mediumorchid; */
+}
+
+[href="https://www.google.com/"]
+{
+  background-color: orangered;
+}
+
+[href^="color"] {
+  background-color: purple;
+}
+
+[href*="modo"] {
+  background-color: green;
+}
+
+[href$="rojo"] {
+  background-color: blue;
+}
+
+[lang|="en"] {
+  color: white;
+  background-color: darkblue;
+}
+
+/* SELECTORES AGRUPADOS */
+/* .text {
+  background-color: steelblue;
+}
+
+.text-2 {
+  background-color: steelblue;
+}
+.text-3 {
+  background-color: steelblue;
+}
+
+.text-4 {
+  background-color: steelblue;
+} */
+
+.text,
+.text-2,
+.text-3,
+.text-4 {
+  /* background-color: steelblue;
+  font-size: 2rem; */
+}
+
+/* Selector descendiente */
+div .title-2 {
+  background-color: pink;
+}
+
+/* Hermano siguiente */
+.text-2 + .title-2 {
+  background-color: red;
+}
+
+/* Hermano siguiente */
+.text-2 ~ p {
+  background-color: teal;
+}
+
+/* Hijo directo */
+.container > p {
+  background-color: lightpink;
+}

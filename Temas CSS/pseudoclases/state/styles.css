@@ -1,0 +1,121 @@
+.input,
+.label {
+  display: block;
+}
+
+.input:enabled {
+  background-color: red;
+}
+
+.input:disabled {
+  background-color: yellow;
+  border: none;
+}
+
+.input:checked + label {
+  font-size: 2em;
+}
+
+/* EJEMPLO CHECKBOX */
+.wrapper {
+  border: 1px solid black;
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.check {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 80px;
+  width: 80px;
+  background-color: #d5d5d5;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.label-check {
+  color: #4c4c4c;
+  font-size: 56px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.check::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  font-size: 50px;
+  color: white;
+  display: none;
+}
+
+.check:hover {
+  background-color: #a5a5a5;
+}
+
+.check:checked {
+  background-color: #5bcd3e;
+}
+
+.check:checked::after {
+  display: block;
+}
+
+/* Continuamos pseudoclases */
+.input:in-range {
+  background: green;
+}
+
+.input:out-of-range {
+  color: white;
+  background: blue;
+}
+
+.no-valido {
+  display: none;
+  color: red;
+}
+
+.input:out-of-range ~ .no-valido {
+  display: block;
+}
+
+.input:optional {
+  background-color: purple;
+}
+
+.input:required {
+  background-color: lightcoral;
+}
+
+.input:valid {
+  background-color: lightgreen;
+}
+
+.input:invalid {
+  background-color: pink;
+}
+
+.input:read-only {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.input:read-write {
+  background-color: pink;
+}

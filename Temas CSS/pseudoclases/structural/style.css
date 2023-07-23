@@ -1,0 +1,99 @@
+/* :root {
+  --variable: #fff;
+  --variable2: #000;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+/* .button {
+  --variable2: red;
+  color: var(--variable2);
+} */
+
+.paragraph {
+  background-color: lightblue;
+  padding: 0.5rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.paragraph:empty {
+  /* padding: 0; */
+  /* Con esta propiedad reseteamos los estilos */
+  all: unset;
+}
+
+/* CHILD */
+/* :first-child {
+  background-color: #c2c2c2;
+} */
+
+/* .paragraph:first-child {
+  background-color: lightpink;
+} */
+
+/* .paragraph:last-child {
+  color: white;
+  background-color: blue;
+} */
+
+/* nth-child */
+/* .paragraph:nth-child(odd) {
+  background-color: lightcoral;
+} */
+
+/* .paragraph:nth-child(even) {
+  background-color: lightgreen;
+}
+
+.paragraph:nth-child(10) {
+  background-color: orange;
+}
+
+.paragraph:nth-child(3n) {
+  background-color: green;
+}
+
+.paragraph:nth-child(3n + 1) {
+  background-color: blue;
+}
+
+.paragraph:nth-child(n + 4) {
+  background-color: lightpink;
+}
+
+.paragraph:nth-last-child(4) {
+  background-color: lightblue;
+}
+
+.paragraph:only-child {
+  background-color: lightseagreen;
+}
+
+.paragraph:nth-of-type(3) {
+  background-color: red;
+}
+
+.paragraph:first-of-type {
+  background-color: orange;
+} */
+
+/* .paragraph:not(div) {
+  background-color: fuchsia;
+}
+
+.paragraph:not(p) {
+  background-color: blue;
+} */
+
+.error {
+  background-color: red;
+}
+
+.paragraph:not(div):not(.error) {
+  background-color: green;
+}
