@@ -62,3 +62,7 @@ body {
 .bg-orange {
   background-color: #ff7b0f;
 }
+
+.green-text {
+  color: rgb(2, 190, 2);
+}
