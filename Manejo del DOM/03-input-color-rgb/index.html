@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color RGB</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/color.png" />
+  </head>
+  <body>
+    <main class="principal-container">
+      <div class="inner-container">
+        <div class="color">
+          <label for="red">Red (R)</label>
+          <input type="range" id="red" min="0" max="255" value="23" step="1" />
+          <p id="redText"></p>
+        </div>
+        <div class="color">
+          <label for="green">Green (G)</label>
+          <input
+            type="range"
+            id="green"
+            min="0"
+            max="255"
+            value="41"
+            step="1"
+          />
+          <p id="greenText"></p>
+        </div>
+        <div class="color">
+          <label for="blue">Blue (B)</label>
+          <input type="range" id="blue" min="0" max="255" value="56" step="1" />
+          <p id="blueText"></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
