@@ -131,3 +131,68 @@ newTopping.append(newChild);
 
 // ? Remover elemento
 newChild.remove();
+
+// **** RECORRIENDO EL DOM
+// ? Nodo padre
+
+console.log(listOriginalToppings.parentElement);
+// console.log(listOriginalToppings.parentNode);
+console.log(listOriginalToppings.parentElement.parentElement);
+
+// ? Elementos hijos
+console.log(listOriginalToppings.children);
+
+// ? Primer hijo
+console.log(listOriginalToppings.firstChild);
+console.log(listOriginalToppings.children[0]);
+console.log(listOriginalToppings.firstElementChild);
+
+// ? Ultimo hijo
+console.log(listOriginalToppings.lastChild);
+console.log(listOriginalToppings.lastElementChild);
+
+// ? Elementos hermanos
+// * Nodos
+console.log(listOriginalToppings.previousSibling);
+// * Elementos
+console.log(listOriginalToppings.previousElementSibling);
+
+// * Nodos
+console.log(listOriginalToppings.nextSibling);
+// * Elementos
+console.log(listOriginalToppings.nextElementSibling);
+console.log(listOriginalToppings.nextElementSibling.nextElementSibling);
+
+// **** EVENTOS
+function mostrarClic() {
+  console.log("Hiciste clic");
+}
+
+// ? valor personalizado
+function mostrarClicPersonalizado(topping = "un Elemento X") {
+  console.log("Hiciste clic en", topping);
+}
+
+// ** addEventListener
+const albahaca = document.getElementById("albahaca");
+
+function mostrarClicJS(event) {
+  console.log("Hiciste clic desde JS");
+  console.log(event);
+  console.log(event.target);
+  console.log(event.target.innerText);
+}
+
+albahaca.addEventListener("click", mostrarClicJS);
+
+const toppinsEvent = document.getElementsByClassName("topping");
+console.log(toppinsEvent);
+// console.log(toppinsEvent[0]);
+
+for (const topping of toppinsEvent) {
+  // console.log(topping);
+  // topping.addEventListener("click", mostrarClicJS);
+  topping.addEventListener("click", (e) => {
+    console.log(e.target.innerText);
+  });
+}
