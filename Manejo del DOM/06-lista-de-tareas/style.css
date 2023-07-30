@@ -1,0 +1,118 @@
+/* Fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: url("images/bg.jpeg") no-repeat center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* Contenedor principal */
+.container {
+  width: 700px;
+  min-height: 500px;
+  background-color: white;
+  padding: 40px;
+  border: 5px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título */
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Input */
+input {
+  width: 80%;
+  height: 50px;
+  font-size: 25px;
+  margin: 20px;
+  padding: 10px;
+  border: 4px solid #404040;
+  border-radius: 10px;
+}
+
+button {
+  width: 150px;
+  height: 60px;
+  padding: 10px;
+  color: white;
+  background: #1312a8;
+  font-size: 22px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Lista de tareas */
+#listTask {
+  margin-top: 20px;
+  width: 80%;
+}
+
+/* Tara */
+.task {
+  font-size: 25px;
+  padding: 10px;
+  min-height: 70px;
+  margin-top: 10px;
+  color: white;
+  background-color: #407ba6;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+/* Tarea completada */
+.complete {
+  text-decoration: line-through;
+  background-color: black;
+  border: none;
+}
+
+.task p {
+  max-width: 350px;
+}
+
+/* Iconos */
+i {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.complete-icon {
+  color: rgb(0, 255, 0);
+}
+
+.delete-icon {
+  color: rgb(255, 255, 255);
+}
+
+.complete-icon:hover,
+.delete-icon:hover {
+  background-color: rgb(255, 255, 255, 0.523);
+}

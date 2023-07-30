@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500&display=swap");
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("images/madera.jpg") no-repeat center/cover;
+}
+
+/* Contenedores */
+.principal-container {
+  width: 80vw;
+  max-width: 600px;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.button-container {
+  padding: 20px;
+}
+
+/* Cronometro */
+#chronometer {
+  font-size: 80px;
+  font-weight: bold;
+  user-select: none;
+  font-family: "Noto Sans Thai", sans-serif;
+  width: 100%;
+}
+
+/* Botones */
+.button {
+  height: 80px;
+  font-size: 50px;
+  margin: 10px;
+  padding: 10px;
+  width: 80px;
+  cursor: pointer;
+}
+
+#buttonStartPause.start,
+#buttonStartPause.start i {
+  background-color: #08e008;
+}
+
+#buttonStartPause.pause,
+#buttonStartPause.pause i {
+  background-color: #ffdc00;
+}
+
+#buttonRestart {
+  background-color: red;
+}
+
+#buttonRestart:disabled:hover {
+  cursor: not-allowed;
+}
